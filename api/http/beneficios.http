@@ -1,0 +1,57 @@
+// Teste da API REST de benefícios
+@baseURL = http://localhost:4000/api/beneficios
+
+// GET - Lista todos os benefícios
+GET {{baseURL}}
+Content-Type: application/json
+
+###
+// GET - Lista o benefício pelo ID
+GET {{baseURL}}/id/6612ab0cbcb96605bb5bce8b
+Content-Type: application/json
+
+###
+// GET - Lista o benefício pelo nome
+GET {{baseURL}}/nome/RBD
+Content-Type: application/json
+
+###
+// DELETE - Remove o benefício pelo id
+DELETE {{baseURL}}/6612ac1c8e43e5b3b2e1e4eb
+Content-Type: application/json
+
+###
+// POST - Insere um novo benefício
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+    "nome": "Show do Matue",
+    "data": "2024-12-12",
+    "endereco":{
+        "logradouro": "Av 31 de Março",
+        "bairro": "Protestantes",
+        "cidade": "Votorantim"
+    },
+    "pontos": 200,
+    "quantidade": 32
+}
+
+###
+// PUT - Altera um benefício já existente
+
+PUT {{baseURL}}
+Content-Type: application/json
+
+{
+    "_id": "6612ada5a3beedea40512f7b",
+    "nome": "Show do RBD",
+    "data": "2024-12-12",
+    "endereco": {
+      "logradouro": "Av 31 de Março",
+      "bairro": "Protestantes",
+      "cidade": "Votorantim"
+    },
+    "pontos": 200,
+    "quantidade": 32
+  }

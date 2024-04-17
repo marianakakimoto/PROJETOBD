@@ -1,0 +1,27 @@
+use('EcosRev')
+const beneficio = {
+    "nome": "Show do Matue",
+    "data": "2024-12-12",
+    "endereco":{
+        "logradouro": "Av 31 de Março",
+        "bairro": "Protestantes",
+        "cidade": "Votorantim"
+    },
+    "pontos": 200,
+    "quantidade": 32
+}
+db.beneficios.insertOne(beneficio)
+
+use('EcosRev')
+const beneficio1 = {
+    "nome": "Show do Slipknot",
+    "data": "2024-12-12",
+    "endereco":{
+        "logradouro": "Av 31 de Março",
+        "bairro": "Protestantes",
+        "cidade": "Votorantim"
+    },
+    "pontos": 200,
+    "quantidade": 32
+}
+db.beneficios.insertOne(beneficio1)

@@ -21,6 +21,7 @@ footer {
     background:  rgba(153, 196, 68, 100%);
 }
 
+
 .container-fluid {
     height: 100px;
 }
@@ -51,3 +52,47 @@ button{
     height: 25px;
     width: 25px;
 }
+
+/*TELA DE LOGIN */
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.card-header{
+    background-color:  rgba(153, 196, 68, 100%);
+    color: white;
+}
+
+.inicial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#botaoLogin{
+    background-color: rgba(153, 196, 68, 100%);
+    width: 100px;
+    color: white;   
+};
+
+h4{
+
+    justify-content: center;
+}
+
+td button{
+    width: 30%;
+    height: 30%;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+#botaoSalvar{
+    background-color: rgba(153, 196, 68, 100%);
+    color: white   ;
+}
+
